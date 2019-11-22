@@ -1,0 +1,63 @@
+html, body {
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background: white;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-rows: 12vh 69vh 19vh;
+    grid-template-areas: "h h"
+                        "m a"   
+                        "f f"
+                      
+}                           
+
+header {
+    background: #292929;
+    grid-area: h;
+}
+
+main {
+
+    background:white;
+    grid-area: m; 
+
+}
+
+aside {
+    grid-area: a;
+    border-left: 2px dashed;    
+}
+
+footer {
+    grid-area: f;
+    border-top: 2px dashed;
+
+}
+
+.itens ul {
+    text-align: center;  /***** Alinha o MENU ao centro *****/
+	letter-spacing: 0.1em;
+
+}
+
+.itens ul li {
+    display:inline-block;
+	margin: 15px;
+	line-height: 1.0; 
+}
+
+.itens ul li a{
+	font: 14px Sans-Serif;
+	color:white;
+	text-decoration:none;
+	font-weight: lighter;
+}
+
+.itens ul li a:hover{
+	color: silver;
+}
